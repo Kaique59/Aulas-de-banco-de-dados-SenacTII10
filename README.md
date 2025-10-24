@@ -1,4 +1,4 @@
-# 🧠 Bancos de Dados (Atividades propostas pela professora Luana) - TII10
+# 🗄️ Bancos de Dados (Atividades propostas pela professora Luana) - TII10
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" />
@@ -42,7 +42,7 @@ Esses são os **meus primeiros projetos com MySQL e phpMyAdmin**, representando 
 
 ---
 
-## 🧑‍💻 Autor
+## 💻 Autor
 
 **Kaique59**  
 Aluno do curso Técnico em Informática para a Internet - **Senac TII10**
@@ -51,5 +51,6 @@ Aluno do curso Técnico em Informática para a Internet - **Senac TII10**
 
 <div align="center">
 
-Feito com dedicação durante as aulas de **Banco de Dados** do **Senac**, sob orientação da professora **Luana** 
+Feito com dedicação durante as aulas de **Banco de Dados** do **Senac**, sob orientação da professora **Luana** 💙  
+
 </div>
