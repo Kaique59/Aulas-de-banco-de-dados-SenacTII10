@@ -1,0 +1,49 @@
+CREATE DATABASE IF NOT EXISTS apoio_ao_cidadao;
+USE apoio_ao_cidadao;
+
+CREATE TABLE tb_funcionario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    login VARCHAR(200),
+    senha VARCHAR(200)
+);
+
+INSERT INTO tb_funcionario (login, senha) VALUES ('admin', 'admin');
+
+CREATE TABLE tb_cidadaos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(200) NOT NULL,
+    cpf VARCHAR(14) NOT NULL UNIQUE,
+    telefone VARCHAR(20),
+    endereco TEXT
+);
+
+CREATE TABLE tb_necessidades (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE tb_cidadao_necessidade (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cidadao_id INT,
+    necessidade_id INT,
+    status VARCHAR(100) DEFAULT 'não atendido',
+    FOREIGN KEY (cidadao_id) REFERENCES tb_cidadaos(id) ON DELETE CASCADE,
+    FOREIGN KEY (necessidade_id) REFERENCES tb_necessidades(id) ON DELETE CASCADE
+);
+
+CREATE TABLE tb_atendimentos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cidadao_id INT,
+    funcionario_id INT,
+    data_atendimento DATETIME DEFAULT CURRENT_TIMESTAMP,
+    observacoes TEXT,
+    FOREIGN KEY (cidadao_id) REFERENCES tb_cidadaos(id) ON DELETE CASCADE,
+    FOREIGN KEY (funcionario_id) REFERENCES tb_funcionario(id) ON DELETE SET NULL
+);
+
+INSERT INTO tb_necessidades (descricao) VALUES 
+('Cesta básica'),
+('Auxílio financeiro'),
+('Transporte'),
+('Apoio psicológico'),
+('Encaminhamento profissional');
