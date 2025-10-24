@@ -51,5 +51,5 @@ Aluno do curso Técnico em Informática - **Senac TII10**
 
 <div align="center">
 
-Feito com dedicação durante as aulas de **Banco de Dados** do **Senac**, sob orientação da professora **Luana** 💙  
+Feito com dedicação durante as aulas de **Banco de Dados** do **Senac**, sob orientação da professora **Luana** 
 </div>
