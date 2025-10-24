@@ -45,7 +45,7 @@ Esses são os **meus primeiros projetos com MySQL e phpMyAdmin**, representando 
 ## 🧑‍💻 Autor
 
 **Kaique59**  
-Aluno do curso Técnico em Informática - **Senac TII10**
+Aluno do curso Técnico em Informática para a Internet - **Senac TII10**
 
 ---
 
